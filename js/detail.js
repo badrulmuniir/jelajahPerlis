@@ -68,7 +68,7 @@ function render(a) {
   setMeta("og:description", a.summary, true);
   setMeta("og:image", imgs[0].src, true);
 
-  const paras = a.description.split("\n\n").map((p) => `<p>${esc(p)}</p>`).join("");
+  const paras = a.description.split("\n\n").map(paragraphHTML).join("");
   const highlights = a.highlights.filter((h) => !isTodo(h));
 
   root.innerHTML = `
@@ -127,6 +127,16 @@ function render(a) {
   injectJsonLd(a);
   bindTripButtons(root);
   initGallery(imgs);
+}
+
+// Hide "TODO" sentences from visitors; flag the paragraph as still being verified.
+function paragraphHTML(p) {
+  const sentences = p.split(/(?<=[.!?])\s+/);
+  const kept = sentences.filter((x) => !isTodo(x));
+  const flagged = kept.length < sentences.length;
+  const text = kept.join(" ");
+  return (text ? `<p>${esc(text)}</p>` : "") +
+    (flagged ? `<p>${show("TODO")} <small>More details are still being verified.</small></p>` : "");
 }
 
 function initGallery(imgs) {
