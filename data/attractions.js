@@ -74,7 +74,7 @@ export const attractions = [
     summary: "The Wang Kelian market area, known as a market stop near the border.",
     description:
       "The Wang Kelian market area is a market destination near the Wang Kelian border area.\n\n" +
-      "TODO: verify current operating days, status, border-access rules and what is sold before publishing details. Check official sources; arrangements here have changed over time.",
+      "TODO: verify current operating days, status, border-access rules and what is sold before publishing details.",
     highlights: [`${TODO} what is sold`, `${TODO} current status`],
     location: { area: "Wang Kelian", lat: null, lng: null },
     bestTime: `${TODO}`,
