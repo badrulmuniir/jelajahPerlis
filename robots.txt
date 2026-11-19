@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: replace with the real deployed URL
+Sitemap: https://TODO-set-site-url.example/jelajah-perlis/sitemap.xml

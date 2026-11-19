@@ -32,3 +32,8 @@ Resolve each item against official sources (Perlis tourism / state park authorit
 - [ ] About page statements about Perlis: verify in phase 7.
 - [ ] Contact details: no real email or address is published; the form is front-end only.
 - [ ] Canonical site URL for `sitemap.xml`, `robots.txt` and Open Graph tags: set once the deploy URL is known (phase 8).
+
+## Deploy
+- [ ] Replace placeholder base URL in `sitemap.xml` and `robots.txt`.
+- [ ] Add Open Graph absolute image URLs once the URL is known.
+- [ ] Run Lighthouse (not yet run; no browser automation available in the build environment).

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: replace the placeholder base URL with the real deployed URL (see CONTENT_TODO.md) -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/index.html</loc></url>
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/attractions.html</loc></url>
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/plan.html</loc></url>
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/about.html</loc></url>
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/attraction.html?id=gua-kelam</loc></url>
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/attraction.html?id=wang-kelian-state-park</loc></url>
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/attraction.html?id=wang-kelian-sunday-market</loc></url>
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/attraction.html?id=tasik-melati</loc></url>
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/attraction.html?id=kota-kayang-museum</loc></url>
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/attraction.html?id=masjid-alwi</loc></url>
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/attraction.html?id=padang-besar</loc></url>
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/attraction.html?id=kuala-perlis</loc></url>
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/attraction.html?id=harumanis-orchards</loc></url>
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/attraction.html?id=bukit-ketri-chabang</loc></url>
+  <url><loc>https://TODO-set-site-url.example/jelajah-perlis/attraction.html?id=perlis-laksa-eateries</loc></url>
+</urlset>
