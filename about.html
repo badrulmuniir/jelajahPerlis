@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About &amp; Contact | Jelajah Perlis</title>
+  <meta name="description" content="About Perlis and the Jelajah Perlis project, plus a feedback form.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About &amp; Contact | Jelajah Perlis">
+  <meta property="og:description" content="About Perlis and the Jelajah Perlis project.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/contact.js"></script>
+</head>
+<body data-page="about">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <h1>About &amp; Contact</h1>
+        <p>About Perlis, about this project, and how to send feedback.</p>
+      </div>
+    </section>
+
+    <section class="section container about-grid">
+      <article aria-labelledby="perlis-h">
+        <h2 id="perlis-h">About Perlis</h2>
+        <p>Perlis is a state in northern Peninsular Malaysia, on the border with Thailand. Visitors come for its nature, local heritage, food and border-town shopping, and many pass through Kuala Perlis on the way to Langkawi.</p>
+        <p><span class="badge badge--todo">To be confirmed</span> Further facts about the state, such as size, population and history, will be added once checked against official sources.</p>
+      </article>
+      <article aria-labelledby="proj-h">
+        <h2 id="proj-h">About this project</h2>
+        <p>Jelajah Perlis is an independent, static website built with plain HTML, CSS and JavaScript as a portfolio project. It is not an official tourism site.</p>
+        <p>Practical details such as fees, opening hours and access are marked <span class="badge badge--todo">To be confirmed</span> until verified. Please check with the relevant official source before you travel.</p>
+      </article>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="contact-h">
+      <div class="container contact">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Feedback</p>
+          <h2 id="contact-h">Contact &amp; feedback</h2>
+          <p>Spotted a mistake or have a suggestion? This form works in your browser only. Nothing is sent anywhere.</p>
+        </div>
+        <form id="contact-form" class="form" novalidate>
+          <div class="form__field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-err">
+            <p class="form__error" id="name-err" hidden></p>
+          </div>
+          <div class="form__field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-err">
+            <p class="form__error" id="email-err" hidden></p>
+          </div>
+          <div class="form__field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required minlength="10" aria-describedby="message-err"></textarea>
+            <p class="form__error" id="message-err" hidden></p>
+          </div>
+          <button type="submit" class="btn btn--primary">Send feedback</button>
+        </form>
+        <div class="form__success" id="success" role="status" tabindex="-1" hidden>
+          <h3>Thank you!</h3>
+          <p>Your message was checked in your browser. Because this site has no backend, it has not been sent anywhere.</p>
+          <button type="button" class="btn btn--ghost btn--sm" id="again">Write another</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+</body>
+</html>

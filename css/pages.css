@@ -122,3 +122,17 @@ input[type="search"], input[type="text"], input[type="email"], textarea, select 
   .iti-grid, .info-grid { grid-template-columns: 1fr; }
   a { color: #000; text-decoration: none; }
 }
+
+/* ---------- About / Contact ---------- */
+.about-grid { display: grid; gap: 2rem; }
+@media (min-width: 768px) { .about-grid { grid-template-columns: repeat(2, 1fr); } }
+.contact { max-width: 44rem; }
+.form { display: grid; gap: 1.25rem; }
+.form__field { display: flex; flex-direction: column; gap: .3rem; }
+.form__field label { font-weight: 600; }
+.form__field [aria-invalid="true"] { border-color: #b00020; border-width: 2px; }
+.form__error { color: #b00020; margin: 0; font-size: .9rem; font-weight: 600; }
+:root[data-theme="dark"] .form__error { color: #ff9aa8; }
+.form .btn { justify-self: start; }
+.form__success { background: var(--surface); border: 2px solid var(--primary); border-radius: var(--radius); padding: 1.5rem; }
+textarea { resize: vertical; }
