@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Attractions in Perlis | Jelajah Perlis</title>
+  <meta name="description" content="Browse, search and filter attractions in Perlis, Malaysia by category: nature, heritage, food, family and border-town shopping.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Attractions in Perlis | Jelajah Perlis">
+  <meta property="og:description" content="Browse, search and filter attractions in Perlis, Malaysia.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script type="module" src="js/attractions.js"></script>
+</head>
+<body data-page="attractions">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <h1>Attractions</h1>
+        <p>Search, filter and shortlist places to visit in Perlis.</p>
+      </div>
+    </section>
+
+    <section class="section container" aria-label="Browse attractions">
+      <form class="filters" role="search" id="filters" onsubmit="return false">
+        <div class="filters__row">
+          <div class="field">
+            <label for="q">Search</label>
+            <input type="search" id="q" name="q" placeholder="Name, description or tag" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="sort">Sort by</label>
+            <select id="sort" name="sort">
+              <option value="featured">Featured first</option>
+              <option value="az">A to Z</option>
+            </select>
+          </div>
+        </div>
+        <fieldset class="chips">
+          <legend>Category</legend>
+          <div class="chips__list" id="chips"></div>
+        </fieldset>
+        <button type="button" class="btn btn--ghost btn--sm" id="reset" hidden>Clear filters</button>
+      </form>
+
+      <p class="result-count" id="count" role="status" aria-live="polite"></p>
+      <ul class="card-grid" id="grid"></ul>
+      <div class="empty" id="empty" hidden>
+        <h2>No attractions match</h2>
+        <p>Try a different search term or remove a category filter.</p>
+        <button type="button" class="btn btn--primary" id="empty-reset">Clear filters</button>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+</body>
+</html>
