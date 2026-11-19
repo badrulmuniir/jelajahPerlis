@@ -88,3 +88,37 @@ input[type="search"], input[type="text"], input[type="email"], textarea, select 
 .lightbox__close { position: absolute; top: .5rem; right: .5rem; width: 44px; height: 44px; border-radius: 50%; border: 0; background: #fff; color: #000; font-size: 1.1rem; cursor: pointer; }
 .lightbox__nav { display: flex; justify-content: center; gap: 1rem; margin-top: .5rem; }
 .lightbox__nav button { width: 44px; height: 44px; border-radius: 50%; border: 0; background: #fff; color: #000; cursor: pointer; font-size: 1.1rem; }
+
+/* ---------- Plan ---------- */
+.plan-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .75rem; margin-bottom: 1rem; }
+.plan-bar h2 { margin: 0; }
+.plan-bar__actions { display: flex; gap: .5rem; }
+.short-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem; counter-reset: stop; }
+.short-item { display: flex; align-items: center; gap: .9rem; padding: .75rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); flex-wrap: wrap; }
+.short-item img { width: 96px; height: 64px; object-fit: cover; border-radius: 8px; }
+.short-item__text { flex: 1; display: flex; flex-direction: column; min-width: 10rem; }
+.short-item__name { font-weight: 700; font-size: 1.05rem; }
+.short-item__meta { color: var(--text-soft); font-size: .9rem; }
+.iti-grid { display: grid; gap: 1.25rem; }
+@media (min-width: 1024px) { .iti-grid { grid-template-columns: repeat(3, 1fr); } }
+.iti { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; }
+.iti__summary { color: var(--text-soft); }
+.info-grid { display: grid; gap: 1rem; }
+@media (min-width: 768px) { .info-grid { grid-template-columns: repeat(2, 1fr); } }
+.info-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; }
+.info-card ul { margin: 0; }
+.info-card li { margin-bottom: .5rem; }
+
+/* ---------- Print ---------- */
+@media print {
+  :root { --bg: #fff; --surface: #fff; --text: #000; --text-soft: #333; --border: #999; }
+  #site-header, #site-footer, .skip-link, .no-print, .page-head p, .hero { display: none !important; }
+  body { font-size: 11pt; background: #fff; }
+  .page-head { background: none; color: #000; padding: 0 0 .5rem; }
+  .page-head h1 { color: #000; }
+  .section, .section--alt { padding-block: 1rem; background: none; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .iti, .short-item, .info-card { break-inside: avoid; box-shadow: none; }
+  .iti-grid, .info-grid { grid-template-columns: 1fr; }
+  a { color: #000; text-decoration: none; }
+}

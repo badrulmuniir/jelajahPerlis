@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan Your Visit to Perlis | Jelajah Perlis</title>
+  <meta name="description" content="Build a shortlist of Perlis attractions, follow suggested itineraries and read practical tips for getting there.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Plan Your Visit to Perlis | Jelajah Perlis">
+  <meta property="og:description" content="Shortlist attractions, follow suggested itineraries and prepare your Perlis trip.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script type="module" src="js/plan.js"></script>
+</head>
+<body data-page="plan">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <h1>Plan your visit</h1>
+        <p>Your shortlist, suggested itineraries and practical information.</p>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="short-h" id="shortlist">
+      <div class="plan-bar">
+        <h2 id="short-h">My shortlist</h2>
+        <div class="plan-bar__actions no-print">
+          <button type="button" class="btn btn--ghost btn--sm" id="print-btn">Print plan</button>
+          <button type="button" class="btn btn--ghost btn--sm" id="clear-btn" hidden>Clear all</button>
+        </div>
+      </div>
+      <p class="visually-hidden" role="status" aria-live="polite" id="short-status"></p>
+      <ol class="short-list" id="short-list"></ol>
+      <div class="empty" id="short-empty" hidden>
+        <p>Your shortlist is empty. Use <strong>Add to trip</strong> on any attraction and it will appear here.</p>
+        <a class="btn btn--primary" href="attractions.html">Browse attractions</a>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="iti-h">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Ready-made plans</p>
+          <h2 id="iti-h">Suggested itineraries</h2>
+          <p>Day-parts only. Check opening hours and travel times for each stop before you go.</p>
+        </div>
+        <div class="iti-grid" id="itineraries"></div>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="info-h">
+      <div class="section-header">
+        <p class="section-header__eyebrow">Before you go</p>
+        <h2 id="info-h">Practical information</h2>
+        <p><span class="badge badge--todo">To be confirmed</span> The items below are an outline. Specific schedules, prices and rules are still being verified with official sources.</p>
+      </div>
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Getting there</h3>
+          <ul>
+            <li><strong>By road:</strong> routes and driving times <span class="badge badge--todo">To be confirmed</span></li>
+            <li><strong>By train (KTM/ETS):</strong> stations at Arau and Padang Besar <span class="badge badge--todo">To be confirmed</span></li>
+            <li><strong>By ferry:</strong> Kuala Perlis jetty to Langkawi; operators and times <span class="badge badge--todo">To be confirmed</span></li>
+          </ul>
+        </article>
+        <article class="info-card">
+          <h3>Local tips</h3>
+          <ul>
+            <li>Carry some cash for small shops and food stalls <span class="badge badge--todo">To be confirmed</span></li>
+            <li>Bring water, sun protection and comfortable shoes for outdoor places.</li>
+            <li>Check each attraction's page for fee and hours, and confirm with official sources.</li>
+          </ul>
+        </article>
+        <article class="info-card">
+          <h3>Safety &amp; etiquette</h3>
+          <ul>
+            <li>Dress modestly and respect prayer times at mosques and other places of worship.</li>
+            <li>Keep to marked trails and follow any park or site signage.</li>
+            <li>If you plan to cross the Thai border, check passport and entry requirements first <span class="badge badge--todo">To be confirmed</span></li>
+          </ul>
+        </article>
+        <article class="info-card">
+          <h3>Best seasons</h3>
+          <ul>
+            <li>Best months to visit <span class="badge badge--todo">To be confirmed</span></li>
+            <li>Harumanis mango season <span class="badge badge--todo">To be confirmed</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+</body>
+</html>
