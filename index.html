@@ -4,17 +4,69 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jelajah Perlis | Explore Perlis, Malaysia</title>
-  <meta name="description" content="Jelajah Perlis is a guide to attractions and destinations in Perlis, Malaysia.">
+  <meta name="description" content="Jelajah Perlis is a guide to attractions and destinations in Perlis, Malaysia. Browse places, build a shortlist and plan your visit.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jelajah Perlis | Explore Perlis, Malaysia">
+  <meta property="og:description" content="Browse attractions and plan your visit to Perlis, Malaysia.">
+  <meta property="og:image" content="images/placeholder-nature.svg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages.css">
   <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/home.js"></script>
 </head>
 <body data-page="home">
   <a class="skip-link" href="#main">Skip to content</a>
   <header id="site-header"></header>
   <main id="main">
-    <section class="section container"><h1>Jelajah Perlis</h1><p>Scaffold in place. Home page content arrives in phase 3.</p></section>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <p class="hero__eyebrow">Perlis, Malaysia</p>
+        <h1 id="hero-title">Jelajah Perlis</h1>
+        <p class="hero__tagline">Caves, forest, heritage, seafood and a border town, all in Malaysia's northern corner. Find places worth the trip.</p>
+        <p><a class="btn btn--accent" href="attractions.html">Explore Attractions</a>
+        <a class="btn btn--light" href="plan.html">Plan your trip</a></p>
+      </div>
+    </section>
+
+    <section class="facts" aria-label="Quick facts">
+      <ul class="container facts__list">
+        <li><strong>Smallest state</strong> in Malaysia</li>
+        <li><strong>Borders Thailand</strong> at Padang Besar</li>
+        <li><strong>Ferry to Langkawi</strong> from Kuala Perlis</li>
+      </ul>
+    </section>
+
+    <section class="section container" aria-labelledby="featured-title">
+      <div class="section-header">
+        <p class="section-header__eyebrow">Start here</p>
+        <h2 id="featured-title">Featured destinations</h2>
+        <p>A few places to put on your list first.</p>
+      </div>
+      <ul class="card-grid" id="featured-grid"></ul>
+      <p class="section-cta"><a class="btn btn--ghost" href="attractions.html">See all attractions</a></p>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="cat-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Find your interest</p>
+          <h2 id="cat-title">Browse by category</h2>
+        </div>
+        <ul class="tile-grid" id="category-tiles"></ul>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="plan-title">
+      <div class="teaser">
+        <div>
+          <h2 id="plan-title">Plan your trip</h2>
+          <p>Save places to your shortlist, follow a suggested itinerary, and print it for the road.</p>
+        </div>
+        <a class="btn btn--primary" href="plan.html">Start planning</a>
+      </div>
+    </section>
   </main>
   <footer id="site-footer"></footer>
 </body>
